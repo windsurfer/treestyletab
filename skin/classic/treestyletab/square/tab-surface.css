@@ -4,13 +4,6 @@
 
 .tabbrowser-tabs:not([treestyletab-tabbar-position="top"])
   .tabbrowser-tab
-  .tab-background {
-	-moz-transition: background 0.5s ease-out !important;
-	transition: background 0.5s ease-out !important;
-}
-
-.tabbrowser-tabs:not([treestyletab-tabbar-position="top"])
-  .tabbrowser-tab
   :-moz-any(.tab-background:not([pinned]),
             .tab-background:not([titlechanged])[pinned]) {
 	background-color: -moz-dialog !important;

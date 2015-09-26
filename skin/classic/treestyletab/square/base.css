@@ -133,9 +133,6 @@
 }
 .tabbrowser-tabs[treestyletab-mode="vertical"]
   .tabbrowser-tab[pinned][titlechanged]:not([visuallyselected="true"]):hover {
-	background-image: radial-gradient(circle farthest-corner at 50% 3px,
-	                                  ThreeDHighlight 3%,
-	                                  Highlight 100%);
 }
 
 .tabbrowser-tabs:not([treestyletab-tabbar-position="top"])

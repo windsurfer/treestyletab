@@ -470,9 +470,6 @@ tabbrowser[treestyletab-mode="vertical"]
 }
 .tabbrowser-tabs[treestyletab-mode="vertical"]
   .tabbrowser-tab[pinned][titlechanged]:not([visuallyselected="true"]):hover {
-	background-image: radial-gradient(circle farthest-corner at 50% 3px,
-	                                  Highlight 3%,
-	                                  rgba(255, 255, 255, 0) 100%);
 }
 
 

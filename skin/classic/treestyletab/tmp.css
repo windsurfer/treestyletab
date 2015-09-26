@@ -58,7 +58,7 @@
   .tabbrowser-tabs[treestyletab-mode="vertical"] .tabs-closebutton-topbox > .tabs-closebutton {
 	background-image: none !important;
 	margin: 0 !important;
-	padding: 0 2px !important;
+	padding: 0 0px !important;
 	width: 100% !important;
 	min-height: 0 !important;
 	height: 16px !important;
@@ -74,6 +74,7 @@
 	-moz-box-pack: center;
 	box-orient: vertical;
 	-moz-box-orient: vertical;
+	height:40px;
 }
 
 :root[treestyletab-enable-compatibility-tmp="true"]

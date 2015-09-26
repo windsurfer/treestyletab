@@ -15,12 +15,12 @@
 	-moz-border-left-colors: none !important;
 	border-radius: 0;
 	-moz-border-radius: 0;
-	border-top: 1px solid ThreeDShadow !important;
+	border-top: 0px solid ThreeDShadow !important;
 	background: -moz-dialog !important;
 }
 .tabbrowser-tabs[treestyletab-mode="vertical"] .tabs-newtab-button:hover,
 .treestyletab-tabbar-toolbar[treestyletab-mode="vertical"] > toolbarbutton:hover {
-	background: ThreeDHighlight !important;
+	/*background: ThreeDHighlight !important;*/
 }
 
 /* for Mac OS X */
@@ -60,14 +60,22 @@
 .treestyletab-tabbar-toolbar[treestyletab-mode="vertical"] > toolbarbutton,
 .treestyletab-tabbar-toolbar[treestyletab-mode="vertical"] > toolbarpaletteitem > toolbarbutton {
 	background-image: none !important;
-	margin: 0 !important;
 	padding: 0 2px !important;
 	width: 100% !important;
 	min-height: 0 !important;
-	height: 16px !important;
+	margin: 4px 8px !important;
+	border-radius: 4px !important;
+	height: 22px !important;
+	opacity: 0.5 !important;
 }
 
 
+.tabbrowser-tabs[treestyletab-mode="vertical"] .tabs-newtab-button:hover,
+.treestyletab-tabbar-toolbar[treestyletab-mode="vertical"] > toolbarbutton:hover,
+.treestyletab-tabbar-toolbar[treestyletab-mode="vertical"] > toolbarpaletteitem > toolbarbutton:hover {
+	opacity: 0.7 !important;
+}
+	
 /* new-tab button next to the last tab */
 
 .tabbrowser-tabs[treestyletab-mode="vertical"]
