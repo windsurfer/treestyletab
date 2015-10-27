@@ -12,8 +12,8 @@ pref("extensions.treestyletab.animation.collapse.duration", 150);
  * is activated. *.default preferences are user configurable defaults for
  * "reset tab bar size" feature
  */
-pref("extensions.treestyletab.tabbar.width",                 200);
-pref("extensions.treestyletab.tabbar.width.default",         200);
+pref("extensions.treestyletab.tabbar.width",                 165);
+pref("extensions.treestyletab.tabbar.width.default",         165);
 pref("extensions.treestyletab.tabbar.height",                32);
 pref("extensions.treestyletab.tabbar.height.default",        32);
 pref("extensions.treestyletab.tabbar.shrunkenWidth",         80);
@@ -66,7 +66,7 @@ pref("extensions.treestyletab.tabbar.invertScrollbar", true);
  * This option works only for vertical tab bar.
  */
 pref("extensions.treestyletab.tabbar.narrowScrollbar", true);
-pref("extensions.treestyletab.tabbar.narrowScrollbar.size", "10px");
+pref("extensions.treestyletab.tabbar.narrowScrollbar.size", "8px");
 
 /**
  * On some environments (ex. GNOME3 on Linux), "narrow scrollbar" cannot get
@@ -181,7 +181,7 @@ pref("extensions.treestyletab.enableSubtreeIndent.allTabsPopup", true);
  * vertical tab bar.
  */
 pref("extensions.treestyletab.allowSubtreeCollapseExpand.horizontal", false);
-pref("extensions.treestyletab.allowSubtreeCollapseExpand.vertical",   true);
+pref("extensions.treestyletab.allowSubtreeCollapseExpand.vertical",   false);
 
 /**
  * Activates "stacked tabs" in the horizontal tab bar.
@@ -305,7 +305,7 @@ pref("extensions.treestyletab.insertNewChildAt", 1);
  * Appearance of twisty in tabs. Possible values:
  *  "none", "retro", "modern-black", "modern-white", and "auto".
  */
-pref("extensions.treestyletab.twisty.style", "auto");
+pref("extensions.treestyletab.twisty.style", "none");
 /**
  * Because twisties in tabs are small, it is possibly hard to be clicked.
  * If this pref is "true", TST handles events from favicons just same as
@@ -330,7 +330,7 @@ pref("extensions.treestyletab.clickOnIndentSpaces.enabled", true);
  * 1 = show all titles of tabs in the tree only for collapsed tree
  * 2 = show all titles of tabs in the tree always
  */
-pref("extensions.treestyletab.tooltip.mode", 2);
+pref("extensions.treestyletab.tooltip.mode", 0);
 /**
  * Maximum count of tabs in a tooltip. Tabs over this limit are
  * not shown in the tooltip.
@@ -350,11 +350,11 @@ pref("extensions.treestyletab.show.context-item-reloadDescendantTabs", false);
 pref("extensions.treestyletab.show.context-item-removeTabSubtree", true);
 pref("extensions.treestyletab.show.context-item-removeDescendantTabs", false);
 pref("extensions.treestyletab.show.context-item-removeAllTabsButThisTree", false);
-pref("extensions.treestyletab.show.context-item-collapseAllSubtree", true);
-pref("extensions.treestyletab.show.context-item-expandAllSubtree", true);
-pref("extensions.treestyletab.show.context-item-toggleAutoHide", true);
+pref("extensions.treestyletab.show.context-item-collapseAllSubtree", false);
+pref("extensions.treestyletab.show.context-item-expandAllSubtree", false);
+pref("extensions.treestyletab.show.context-item-toggleAutoHide", false);
 pref("extensions.treestyletab.show.context-item-toggleFixed", true);
-pref("extensions.treestyletab.show.context-item-bookmarkTabSubtree", true);
+pref("extensions.treestyletab.show.context-item-bookmarkTabSubtree", false);
 
 /**
  * How to treat a dropped link on a tab.
@@ -416,7 +416,7 @@ pref("extensions.treestyletab.taskbarPreviews.hideCollapsedTabs", true);
  * If this is "false" trees never be expanded/collapsed automatically, so
  * you'll have to click twisties in tabs always to collapse/expand them.
  */
-pref("extensions.treestyletab.autoCollapseExpandSubtreeOnSelect",      true);
+pref("extensions.treestyletab.autoCollapseExpandSubtreeOnSelect",      false);
 /**
  * When you close a tab and Firefox focuses to the nearest tab, the focus
  * changing possibly causes collapsing/expanding of trees. If you set this
@@ -430,7 +430,7 @@ pref("extensions.treestyletab.autoCollapseExpandSubtreeOnSelect.onCurrentTabRemo
  * attached tab is. If you set this to "true", TST automatically collapses other
  * expanded trees at the time.
  */
-pref("extensions.treestyletab.autoCollapseExpandSubtreeOnAttach", true);
+pref("extensions.treestyletab.autoCollapseExpandSubtreeOnAttach", false);
 /**
  * When you press Ctrl-Tab/Shift-Ctrl-Tab, Firefox advances focus of tabs.
  * If this is "true", TST expands focused tree after a delay specified
@@ -449,7 +449,7 @@ pref("extensions.treestyletab.autoExpandSubtreeOnSelect.whileFocusMovingByShortc
  * If this is "true", TST expands/collapses tree by double-clicking on tabs.
  * Otherwise TST simply ignores such actions.
  */
-pref("extensions.treestyletab.collapseExpandSubtree.dblclick",         false);
+pref("extensions.treestyletab.collapseExpandSubtree.dblclick",        true);
 /**
  * Collapsed state of restored tree.
  *  -1 = Restore the last state.
@@ -503,7 +503,7 @@ pref("extensions.treestyletab.autoAttach.newTabCommand", 0);
  * How to treat new tabs from middle click (or Ctrl-click) on the "New Tab" button.
  *  Options are same to extensions.treestyletab.autoAttach.newTabCommand.
  */
-pref("extensions.treestyletab.autoAttach.newTabButton", 1);
+pref("extensions.treestyletab.autoAttach.newTabButton", 0);
 /**
  * How to treat duplicated tabs.
  *  Options are same to extensions.treestyletab.autoAttach.newTabCommand.
